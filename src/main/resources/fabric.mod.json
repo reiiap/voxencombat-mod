@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "voxencombat",
+  "version": "${version}",
+  "name": "Voxen Combat",
+  "description": "A server-authoritative RPG combat foundation.",
+  "authors": ["Voxen Combat"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["xyz.voxen.combat.VoxenCombat"],
+    "client": ["xyz.voxen.combat.client.VoxenCombatClient"]
+  },
+  "mixins": ["voxencombat.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "fabric-api": "*",
+    "minecraft": "1.21",
+    "java": ">=21"
+  }
+}
